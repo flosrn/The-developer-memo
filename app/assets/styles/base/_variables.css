@@ -1,0 +1,39 @@
+@font-face {
+	font-family: baloo;
+	src: url('../../assets/fonts/baloo.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: lobster;
+	src: url('../../assets/fonts/lobster.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: play;
+	src: url('../../assets/fonts/play.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: open;
+	src: url('../../assets/fonts/open.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: helvetica;
+	src: url('../../assets/fonts/helvetica.woff') format('woff');
+}
+
+/* $mainBlue: #2f5572;
+$mainOrange: #d59541; */
+
+/* $blue: #0099ff;
+$orange: #ff8349; */
+
+$mainTitle: #F0DBC7;
+$mainBlue: #27627F;
+$mainOrange: #FF7A73;
+
+$red: #F15A5A;
+$yellow: #FCCE44;
+$green: #4EBA6F;
+$orange: #F57F4F;

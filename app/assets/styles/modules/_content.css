@@ -1,0 +1,213 @@
+.content {
+
+  background-color: #e6e6e6;
+  padding: 20px;
+
+  .box {
+    /* On centre le texte dans les boites */
+    text-align: center;
+
+    &__1 {
+      background-color: $red;
+    }
+
+    &__2 {
+      background-color: $yellow;
+    }
+
+    &__3 {
+      background-color: $green;
+    }
+
+    &__4 {
+      background-color: $orange;
+    }
+  }
+
+  .text-box__hover {
+    opacity: 0;
+  }
+
+  .text-box__hover:hover {
+    opacity: 1;
+  }
+
+  /*====================================================================================================
+                                        Propriété display                      
+  ======================================================================================================*/
+  &-section-1 {
+
+    .box-container {
+      /* On centre les boites */
+      text-align: center;
+    }
+
+    .box {
+      /* On donne une largeur aux boites */
+      width: 200px;
+      /* On donne une hauteur aux boites */
+      height: 50px;
+      /* On définit les boites en tant que block par defaut */
+      display: block;
+
+      &__section-1 {
+        &--clicked {
+          /* On met les boites sur la même ligne */
+          display: inline-block;
+        }
+      }
+    }
+  }
+  /*====================================================================================================
+                                  Centrer un élément horizontalement                       
+  ======================================================================================================*/
+  &-section-2 {
+
+    .box-container__2-1 {
+      /* Lorsque l‘on clique sur le bouton "Centrer avec text-align" */
+      &--clicked {
+        text-align: center;
+      }
+    }
+
+    .box-container__2-4 {
+      /* Lorsque l‘on clique sur le bouton "Centrer avec flexbox" */
+      &--clicked {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    .box {
+      width: 150px;
+      height: 100px; 
+
+      &__2-1 {
+        /* Lorsque l‘on clique sur le bouton "Centrer avec text-align" */
+        &--clicked {
+          display: inline-block;
+        }
+      }
+      &__2-2 {
+        /* Lorsque l‘on clique sur le bouton "Centrer avec margin" */
+        &--clicked {
+           margin: 0 auto;
+        }
+      }
+      &__2-3 {
+        position: absolute;
+        bottom: 130px;
+        right: 0;
+        /* Lorsque l‘on clique sur le bouton "Centrer un absolute" */
+        &--clicked {
+           left: 50%;
+           transform: translateX(-50%);
+        }
+      }
+      &__2-4 {
+        margin-top: 100px;
+      }
+    }
+  }
+  /*====================================================================================================
+                                  Centrer un élément verticalement                        
+  ======================================================================================================*/
+  &-section-3 {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .box-container {
+      float: left;
+      /* margin-top: 160px; */
+      height: 400px;
+
+      &__3-2 {
+        display:flex;
+      }
+      
+      &__3-3 {
+        /* Lorsque l'on clique sur "Centrer avec flexbox" */
+        &--clicked {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+      &__3-4 {
+        position: relative;
+      }
+    }
+
+    .box {
+      width: 150px;
+      height: 100px; 
+
+      &__3-1 {
+        /* Lorsque l‘on clique sur le bouton "Centrer sur une ligne" */
+        &--clicked {
+          line-height: 100px; /* hauteur de ligne (identique) */
+        }
+      }
+      &__3-2 {
+        /* Lorsque l‘on clique sur le bouton "margin: 0 auto" */
+        &--clicked {
+          margin: auto;
+        }
+      }
+      &__3-4 {
+        position: absolute;
+        top: 0;
+        left: 40px;
+        /* Lorsque l‘on clique sur le bouton "centrer un absolute" */
+        &--clicked {
+          top: 50%; /* poussé de la moitié de hauteur du référent */
+          transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
+        }
+      }
+    }
+  }
+  /*====================================================================================================
+                                        Positionner un element                        
+  ======================================================================================================*/
+  &-section-4 {
+
+    /* Positionnement des boxs */
+    .box {
+      width: 200px;
+      height: 100px;
+
+      /* Premiere boite */
+      &__4-1 {
+        position: relative;
+      }
+
+      /* Deuxieme boite */
+      &__4-2 {
+        /* Lorsque l'on clique sur le bouton "relative" */
+        &--clicked {
+           position: relative;
+           top: -50px;
+           left: 0;
+        
+        }
+        /* Lorsque l'on clique sur le bouton "fixed" */
+        &--clicked-2 {
+          position: fixed;
+          bottom: 0;
+          left: 0;
+        }
+        /* Lorsque l'on clique sur le bouton "absolute" */
+        &--clicked-3 {
+          position: absolute;
+          top: 0px;
+          left: 0px;
+        }
+      }
+    }
+  }
+}
+
+

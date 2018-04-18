@@ -1,0 +1,34 @@
+.accordion {
+  list-style-type: none;
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  margin: 0.5rem 0 1rem 0;
+  padding-left: 0;
+}
+
+.accordion-header {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  min-height: 3rem;
+  line-height: 3rem;
+  padding: 0 1rem;
+}
+
+.accordion-header:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 0.6rem;
+    color: #777;
+    float: right;
+}
+
+.accordion-header.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.accordion-body {
+  display: none;
+  padding: 0rem;
+  border-bottom: 1px solid #ddd;
+}

@@ -1,0 +1,160 @@
+.description {
+  background-color: #f2f2f2;
+  overflow: hidden;
+}
+
+.text-container {
+  position: relative;
+}
+
+code {
+  float: left;
+}
+
+
+.text {
+
+  /*====================================================================================================
+                                        Propriété display                      
+  ======================================================================================================*/
+  /* Texte 1 */
+  &__1-1 {
+    opacity: 0;
+    &--clicked {
+      opacity: 1;
+    }
+  }
+
+  /*====================================================================================================
+                                  Centrer un élément horizontalement                       
+  ======================================================================================================*/
+  /* Texte 1 */
+  &__2-1 {
+    opacity: 0;
+    &--clicked {
+      opacity: 1;
+    }
+  }
+  /* Texte 2 */
+  &__2-2 {
+    opacity: 0;
+    &--clicked {
+      opacity: 1;
+      position: absolute;
+      top: 0;
+    }
+  }
+  /* Texte 3 */
+  &__2-3 {
+    opacity: 0;
+    &--clicked {
+      opacity: 1;
+      position: absolute;
+      top: 0;
+    }
+  }
+  /* Texte 4 */
+  &__2-4 {
+    opacity: 0;
+    &--clicked {
+      opacity: 1;
+      position: absolute;
+      top: 0;
+    }
+  }
+  /* Texte 5 */
+  &__2-5 {
+    opacity: 0;
+    &--clicked {
+      opacity: 1;
+      position: absolute;
+      top: 0;
+    }
+  }
+  
+  /*====================================================================================================
+                                  Centrer un élément verticalement                        
+  ======================================================================================================*/
+  /* Texte 1 */
+  &__3-1 {
+    opacity: 0;
+    &--clicked {
+      opacity: 1;
+    }
+  }
+  /* Texte 2 */
+  &__3-2 {
+    opacity: 0;
+    &--clicked {
+      opacity: 1;
+      position: absolute;
+      top: 0;
+    }
+  }
+  /* Texte 3 */
+  &__3-3 {
+    opacity: 0;
+    &--clicked {
+      opacity: 1;
+      position: absolute;
+      top: 0;
+    }
+  }
+  /* Texte 4 */
+  &__3-4 {
+    opacity: 0;
+    &--clicked {
+      opacity: 1;
+      position: absolute;
+      top: 0;
+    }
+  }
+  /* Texte 5 */
+  &__3-5 {
+    opacity: 0;
+    &--clicked {
+      opacity: 1;
+      position: absolute;
+      top: 0;
+    }
+  }
+
+  /*====================================================================================================
+                                        Positionner un element                        
+  ======================================================================================================*/
+  /* Texte 1 */
+  &__4-1 {
+    opacity: 0;
+    &--clicked {
+      opacity: 1;
+    }
+  }
+  /* Texte 2 */
+  &__4-2 {
+    opacity: 0;
+    &--clicked {
+      opacity: 1;
+      position: absolute;
+      top: 0;
+    }
+  }
+  /* Texte 3 */
+  &__4-3 {
+    opacity: 0;
+    &--clicked {
+      opacity: 1;
+      position: absolute;
+      top: 0;
+    }
+  }
+  /* Texte 4 */
+  &__4-4 {
+    opacity: 0;
+    &--clicked {
+      opacity: 1;
+      position: absolute;
+      top: 0;
+    }
+  }
+}
+

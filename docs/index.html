@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="assets/styles/base/_hover-min.css" rel="stylesheet">
+  <title>Clear View Escapes</title>
+  <meta name="keywords" content="Travel planning, travel bundles, travel escapes, affordable travel">
+  <meta name="description" content="Your clarify. One trip away. We create soul restoring journeys that inspire you to be you.">
+  
+  <!__ build:css assets/styles/styles.css __>
+  <link rel="stylesheet" href="temp/styles/styles.css">
+  <!__ endbuild __>
+  
+  <!__ build:js assets/scripts/Vendor.js __>
+  <script src="/temp/scripts/Vendor.js"></script>
+  <!__ endbuild __>
+  
+</head> 
+<body>
+  <div class="header">
+    <h2>Le mémo du développeur</h2>
+  </div>
+
+
+  <ul class="accordion" data-accordion="open">
+
+    <!-- 
+    ==============================================================
+                  Section 1 - 
+    ==============================================================
+     -->
+    <li>
+      <div class="accordion-header ">First</div>
+      <div class="accordion-body">
+
+        <div class="row row__1">
+          <div class="col-xl-2 col-md-2 title">
+            <div class="btn-container">
+              <button class="btn btn__1-1">Display: block</button>
+              <button class="btn btn__1-2">Display: inline-block</button>
+            </div>
+          </div>
+          <div class="col-xl-6 col-md-6 content content-section-1">
+
+            <div class="box-container">
+              <div class="box box__section-1 box__1 box__1-1">
+                <p>Box 1</p>
+              </div>
+
+              <div class="box box__section-1 box__2 box__1-2">
+                <p>Box 2</p>
+              </div>
+
+              <div class="box box__section-1 box__3 box__1-3">
+                <p>Box 3</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 description">
+
+          </div>
+        </div>
+      </div>
+    </li>
+    <!-- 
+    ==========================================================================================================
+                                      Centrer un élément horizontalement
+    ==========================================================================================================
+    -->
+    <li>
+      <div class="accordion-header">Centrer un élément horizontalement</div>
+      <div class="accordion-body">
+
+        <div class="row row__2">
+            <div class="col-xl-2 col-md-2 title">
+              <div class="btn-container">
+                <button class="btn btn__2-1">Non centré</button>
+                <button class="btn btn__2-2">Centrer avec text-align</button>
+                <button class="btn btn__2-3">Centrer avec margin</button>
+                <button class="btn btn__2-4">Centrer un absolute</button>
+                <button class="btn btn__2-5">Centrer avec flexbox</button>
+              </div>
+            </div>
+            <div class="col-xl-6 col-md-6 content content-section-2">
+
+              <div class="box-container__2-1">
+                <div class="box box__section-2 box__1 box__2-1">
+                  <p>Box 1</p>
+                </div>
+              </div>
+
+              <div class="box-container__2-2">
+                <div class="box box__section-2 box__2 box__2-2">
+                  <p>Box 2</p>
+                </div>
+              </div>
+
+              <div class="box-container__2-3">
+                <div class="box box__section-2 box__3 box__2-3">
+                  <p class="text-box">Box 3</p>
+                  <p class="text-box__hover">Je suis un absolute!</p>
+                </div>
+              </div>
+
+              <div class="box-container__2-4">
+                <div class="box box__section-2 box__4 box__2-4">
+                  <p class="text-box">Box 4</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-md-4 description">
+              <div class="text-container">
+                <div class="text text__2-1">
+                  <p></p>
+                </div>
+                <div class="text text__2-2">
+                  <p>La propriété <strong>text-align</strong> décrit la façon dont un texte en ligne (inline) est alignée dans le bloc de son élément parent. text-align ne contrôle pas l'alignement des éléments en bloc, uniquement celui du contenu en ligne.<br /><br>
+                  Fonctionne uniquement avec <strong>display: inline</strong> ou <strong>inline-block</strong><br /><br />
+                  ! Doit être appliqué à l'élément parent !</p>
+                  <pre class="line-numbers">
+                    <code class="language-css">.box-container1 {
+  text-align: center;
+}
+.box1 {
+  display: inline-block;
+}</code>
+                  </pre>
+                </div>
+                <div class="text text__2-3">
+                  <p>Vous pouvez mettre la valeur auto aux propriétés <strong>margin-right</strong> et <strong>margin-left</strong> pour centrer horizontallement un élément à l'intérieur de son conteneur. L'élément prendra la largeur que vous avez spécifié et l'espace restant sera séparé équitablement entre les deux marges.<br><br>
+                  Attention à ne pas oublier de définir une largeur pour l'élément à centrer, sinon il ne pourra logiquement pas être centré (il occupera toute la largeur disponible, comme tous les blocs par défaut).</p>
+                  <pre class="line-numbers">
+                     <code class="language-css">.box2 {
+  margin: 0 auto;             
+}</code>
+                  </pre>
+                </div>
+                <div class="text text__2-4">
+                  <p>Pour centrer un element absolute il suffit d'utiliser</p>
+                  <pre class="line-numbers">
+                     <code class="language-css">.box3 {
+  left: 50%;
+  transform: translateX(-50%);
+}</code>
+                  </pre>
+                </div>
+                <div class="text text__2-5">
+                  <p>Centrer horizontalement sur le même axe avec la propriété justify-content. <br><br> Doit être appliqué à l'élément parent !</p>
+                  <pre class="line-numbers">
+                     <code class="language-css">.box-container4 {
+  display: flex;
+  align-items: center;
+}</code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </li>
+    <!-- 
+    ==========================================================================================================
+                                      Centrer un élément verticalement
+    ==========================================================================================================
+    -->
+       <li>
+          <div class="accordion-header">Centrer un élément verticalement</div>
+          <div class="accordion-body">
+
+            <div class="row row__3">
+                <div class="col-xl-2 col-md-2 title">
+                  <div class="btn-container">
+                    <button class="btn btn__3-1">Non centré</button>
+                    <button class="btn btn__3-2">Centrer sur une ligne</button>
+                    <button class="btn btn__3-3">Centrer avec margin</button>
+                    <button class="btn btn__3-4">Centrer avec flexbox</button>
+                    <button class="btn btn__3-5">Centrer un absolute</button>
+                  </div>
+                </div>
+                <div class="col-xl-6 col-md-6 content content-section-3">
+
+                  <div class="box-container box-container__3-1">
+                    <div class="box box__section-3 box__1 box__3-1">
+                      <div>Box 1</div>
+                    </div>
+                  </div>
+
+                  <div class="box-container box-container__3-2">
+                    <div class="box box__section-3 box__2 box__3-2">
+                      <p>Box 2</p>
+                    </div>
+                  </div>
+
+                  <div class="box-container box-container__3-3">
+                    <div class="box box__section-3 box__3 box__3-3">
+                      <p class="text-box">Box 3</p>
+                    </div>
+                  </div>
+
+                  <div class="box-container box-container__3-4">
+                    <div class="box box__section-3 box__4 box__3-4">
+                      <p class="text-box">Box 4</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-md-4 description">
+                  <div class="text-container">
+                    <div class="text text__3-1">
+                      <p></p>
+                    </div>
+                    <div class="text text__3-2">
+                      <p>Pour aligner verticalement un mot ou une ligne de texte au sein de son conteneur, il suffit de jouer avec la propriété <strong>line-height</strong> et de lui indiquer la même valeur que son parent.</p>
+                      <pre class="line-numbers">
+                        <code class="language-css">.box1 {
+  width: 150px;
+  height: 100px;
+  line-height: 100px; /* hauteur de ligne 
+  (identique) */
+}</code>
+                      </pre>
+                    </div>
+                    <div class="text text__3-3">
+                      <p>On utilise ici la propriété <strong>display: flex</strong> sur l'élément parent et on défini les margin en auto</p>
+                      <pre class="line-numbers">
+                         <code class="language-css">.box-container2 {
+  display: flex;            
+}
+.box2 {
+  margin: auto;
+}</code>
+                      </pre>
+                    </div>
+                    <div class="text text__3-4">
+                      <p>La puissance de <strong>Flexbox</strong> est également dans sa capacité à centrer des éléments verticalement, voici la même application des flexbox que precédemment, mais avec les éléments flex également centrés verticalement</p>
+                      <pre class="line-numbers">
+                         <code class="language-css">.box-container3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}</code>
+                      </pre>
+                    </div>
+                    <div class="text text__3-5">
+                      <p>On utilise ici le même principe que le centrage horizontal d'un absolute, mais avec <strong>translateY()</strong></p>
+                      <pre class="line-numbers">
+                         <code class="language-css">.box4 {
+  left: 50%;
+  transform: translateY(-50%);
+}</code>
+                      </pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </li>
+    <!-- 
+    ==========================================================================================================
+                                            Positionner un élément
+    ==========================================================================================================
+    -->
+    <li>
+      <div class="accordion-header">La position des éléments</div>
+      <div class="accordion-body">
+
+        <div class="row row__4">
+            <div class="col-xl-2 col-md-2 title">
+              <div class="btn-container">
+                <button class="btn btn__4-1">Static</button>
+                <button class="btn btn__4-2">Relative</button>
+                <button class="btn btn__4-3">Fixed</button>
+                <button class="btn btn__4-4">Absolute</button>
+              </div>
+            </div>
+            <div class="col-xl-6 col-md-6 content content-section-4">
+              <div class="box-container">
+
+                <div class="box box__section-4 box__1 box__4-1">
+                  <p>Box 1</p>
+                </div>
+
+                <div class="box box__section-4 box__2 box__4-2">
+                  <p>Box 2</p>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-4 description">
+              <div class="text-container">
+                <div class="text text__4-1">
+                  <p><strong>static</strong> est la valeur par défaut de tous les éléments. Un élément avec position: static; n'est positionné d'aucune manière spéciale. Un élément static est dit non positionné et un élément avec une propriété position ayant une valeur autre que static est dit positionné.</p>
+                  <pre class="line-numbers">
+                    <code class="language-css">.box2 {
+  position: static;
+}</code>
+                  </pre>
+                </div>
+
+                <div class="text text__4-2">
+                  <p><strong>relative</strong> se comporte de la même façon que static sauf si vous ajoutez quelques propriétés en plus.</p>
+                  <pre class="line-numbers">
+                    <code class="language-css">.box2 {
+  position: relative;
+  top: -50px;
+  left: 0;
+}</code>
+                  </pre>
+                </div>
+
+                <div class="text text__4-3">
+                  <p>Un élément positionné en <strong>fixed</strong> est positionné par rapport a la fenêtre du navigateur, ce qui signifie qu'il reste toujours à la même place même si la page défile. De la même manière qu'avec un élément positionné en relative, nous pouvons utiliser les propriétés top, right, bottom et left.</p>
+                  <pre class="line-numbers">
+                    <code class="language-css">.box2 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}</code>
+                  </pre>
+                </div>
+
+                <div class="text text__4-4">
+                  <p><strong>absolute</strong> est la valeur la plus délicate. absolute se comporte comme fixed sauf que son positionnement est relatif à l'élément parent positionné le plus proche au lieu d'être relatif à la fenêtre du navigateur. Si un élément positionné en absolute n'à aucun élément parent positionné, il utilise le corps du document et se déplace avec le document au défilement de la page. N'oubliez-pas qu'un élément "positionné" est un élément dont la position est tout sauf static.</p>
+                  <pre class="line-numbers">
+                    <code class="language-css">.box2 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}</code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </li>
+  </ul>
+  
+
+
+  
+
+
+
+
+  
+
+  
+  <!__ build:js assets/scripts/App.js __>
+  <script src="/temp/scripts/App.js"></script>
+  <script src="./assets/scripts/Prism.js"></script>
+  <!__ endbuild __>
+
+</body>
+</html>
