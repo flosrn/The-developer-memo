@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "dependencies": {
     "hover.css": "^2.3.0",
-    "jquery": "^2.2.4",
+    "jquery": "^3.5.0",
     "jquery-smooth-scroll": "^2.0.0",
     "lazysizes": "^2.0.0",
     "normalize.css": "^4.1.1",
